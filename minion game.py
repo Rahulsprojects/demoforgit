@@ -1,6 +1,6 @@
 def minion_game(s):
     consnt = []
-    vowel = ['a', 'e', 'i', 'o', 'u']
+    vowel = ['A', 'E', 'I', 'O', 'U']
     count_kevin = 0
     count_stuart = 0
     for i in s:
@@ -18,7 +18,7 @@ def minion_game(s):
                     else:
                         break
     for j in s:
-        vowel = ['a', 'e', 'i', 'o', 'u']
+        vowel = ['A', 'E', 'I', 'O', 'U']
         if j not in vowel:
             if j not in consnt:
                 consnt.append(j)
@@ -33,6 +33,7 @@ def minion_game(s):
                             new_pos += 1
                         else:
                             break
+    print(count_kevin)
     if count_stuart > count_kevin:
         print('Stuart', count_stuart)
     elif count_kevin > count_stuart:

@@ -1,4 +1,4 @@
-x, y, z, n = (int(input()) for l in range(4))
+x, y, z, n = (int(input()) for l in range(4))   # multiple input
 threed_grid = []
 for i in range(x+1):
     for j in range(y+1):
